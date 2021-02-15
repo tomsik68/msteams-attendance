@@ -58,7 +58,7 @@
         };
 
         const typeParse = (str) => {
-          if (str === 'Pripojil sa') {
+          if (str.startsWith('Pripojil sa')) {
             return EVENT_JOIN;
           }
           else if (str.startsWith('Odi')) {
